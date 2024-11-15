@@ -35,7 +35,7 @@ bot = commands.Bot(command_prefix="!", help_command=None, intents=intents)
 @bot.event
 async def on_ready():
     logging.info(f"[TEMARI] Logged in as {bot.user}")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="世界一可愛い私"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="Luna say maybe"))
 
     ignored_files = ["bot.py", "keep_alive.py", "__init__.py"]
     
