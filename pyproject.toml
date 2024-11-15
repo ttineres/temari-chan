@@ -1,0 +1,24 @@
+[project]
+name = "temari"
+version = "0.0.0"
+description = "A custom Discord app for Gakumas."
+readme = "README.md"
+requires-python = ">= 3.12"
+dependencies = [
+    "python-dotenv",
+    "discord.py",
+    "flask",
+]
+
+[project.urls]
+Homepage = "https://github.com/ttineres/temari-chan"
+
+[project.scripts]
+temari-init = "temari.bot:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["temari"]
