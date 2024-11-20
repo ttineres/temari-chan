@@ -1,6 +1,6 @@
 [project]
 name = "temari"
-version = "0.0.0"
+version = "0.0.1"
 description = "A custom Discord app for Gakumas."
 readme = "README.md"
 requires-python = ">= 3.12"
@@ -8,6 +8,7 @@ dependencies = [
     "python-dotenv",
     "discord.py",
     "flask",
+    "audioop-lts; python_version>='3.13'",
 ]
 
 [project.urls]
